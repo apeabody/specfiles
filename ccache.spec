@@ -12,8 +12,8 @@
 %global relccache %(%abs2rel %{_bindir}/ccache %{_libdir}/ccache)
 
 Name:           ccache
-Version:        3.2.5
-Release:        1%{?dist}
+Version:        3.2.6
+Release:        1
 Summary:        C/C++ compiler cache
 
 Group:          Development/Tools
@@ -171,6 +171,9 @@ getent group ccache >/dev/null || groupadd -r ccache || :
 
 
 %changelog
+* Tue Jul 12 2016 Andrew Peabody <apeabody@gmail.com> - 3.2.6-1
+- Update to 3.2.6.
+
 * Thu Jun  2 2016 Andrew Peabody <apeabody@gmail.com> - 3.2.5-1
 - Update to 3.2.5. 
 
